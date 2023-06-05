@@ -35,7 +35,7 @@ test: dep ## Run tests
 	@rm .test_coverage.txt
 
 docker-build: ## Build docker image
-	docker build -t akastav/go-practice:${TAG} .
+	docker build -t akastav/go-practice:${TAG} -f build/Dockerfile .
 	docker image prune --force --filter label=stage=intermediate
 
 docker-push: ## Push docker image to registry
