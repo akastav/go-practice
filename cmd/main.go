@@ -1,10 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "go-practice/custom"
 
 func main() {
-	fmt.Println("Hello, World!")
-	fmt.Println(app.json())
+	git.Logs()
 }
