@@ -1,5 +1,5 @@
 # stage 1: build
-ARG GOLANG_IMAGE="golang:1.18"
+ARG GOLANG_IMAGE="golang:1.20"
 
 FROM ${GOLANG_IMAGE} as build
 
