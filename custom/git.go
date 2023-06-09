@@ -1,4 +1,4 @@
-package git
+package example
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/go-git/go-git/v5/storage/memory"
 )
 
-func Logs() {
+func GitLogs() {
 	// Clones the given repository, creating the remote, the local branches
 	// and fetching the objects, everything in memory:
 	Info("git clone https://github.com/src-d/go-siva")

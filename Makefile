@@ -21,6 +21,10 @@ build: dep ## Build executable.
 	mkdir -p ./bin
 	CGO_ENABLED=0 GOOS=linux GOARCH=${GOARCH} go build ${LDFLAGS} -o bin/${PROGRAM_NAME} ./cmd
 
+build-mac: dep ## Build for macos
+	mkdir -p ./bin
+	CGO_ENABLED=0 GOOS=darwin GOARCH=${GOARCH} go build ${LDFLAGS} -o bin/${PROGRAM_NAME} ./cmd
+
 clean: ## Clean build directory.
 	rm -f ./bin/${PROGRAM_NAME}
 	rmdir ./bin
